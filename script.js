@@ -10,7 +10,14 @@ function calculateForce() {
 
   const result1 = (w1 * 0.5) + m;
   const result2 = (w2 * 0.5) + m;
-  const force = (result1 / result2).toFixed(3);
+
+  // التأكد من أن المقسوم عليه هو الرقم الأكبر
+  let force;
+  if (result1 > result2) {
+    force = result1 / result2;  // النتيجة: الأكبر على الأصغر
+  } else {
+    force = result2 / result1;  // النتيجة: الأكبر على الأصغر
+  }
 
   document.getElementById('result').innerText = `قوة التنافر = ${force}`;
 }
