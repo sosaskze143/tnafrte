@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>حاسبة قوة التنافر</title>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>حاسبة قوة التنافر</h1>
+    <p class="sub">احسب القوة بين جسمين حسب نظرية عدم التلامس</p>
+
+    <div class="calculator">
+      <label>وزن الجسم الأول (كجم):</label>
+      <input type="number" id="weight1" placeholder="مثال: 50" />
+
+      <label>وزن الجسم الثاني (كجم):</label>
+      <input type="number" id="weight2" placeholder="مثال: 40" />
+
+      <button onclick="calculateForce()">احسب القوة</button>
+
+      <div id="result"></div>
+    </div>
+
+    <footer>
+      <p>تعتمد هذه الحاسبة على قانون نظرية عدم التلامس باستخدام رقم الموازنة (3.4)</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
